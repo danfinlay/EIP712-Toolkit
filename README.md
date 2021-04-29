@@ -4,11 +4,6 @@
 #### Getting Started
 First, modify the file 'eip-712-config.json' to your liking 
 
-Then, modify 'dataValues' variable in both '/test/ganacheTest.js' and in 'index.js'
-
-
-[or skip those first two steps]
-
 
 Then, run the 'build, compile, test' commands to build and test associated solidity files for your EIP712 project
 

@@ -10,6 +10,6 @@
         "requireProjectId":"bool",
         "projectId":"uint256",
         "expires":"uint256"
-     }
+    }
 }
  

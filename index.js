@@ -1,13 +1,8 @@
-
-
 import  fs   from 'fs';
- 
-
 import path from 'path';
 
 import GenerationHelper from './lib/GenerationHelper.js' 
 import EIP712Utils from './lib/EIP712Utils.js' 
- 
 
 function start(){
 
@@ -21,22 +16,7 @@ function start(){
 
     let customConfigJSON = fs.readFileSync(path.join('eip712-config.json'));
     let customConfig = JSON.parse(customConfigJSON)
-
-
-      /*
-      MAKE SURE YOU CHANGE THIS VARIABLE IF YOU MODIFY eip712-config.json!!!
-      */     
-    let dataValues = {
-        customName:"myName",
-        bidderAddress:"0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC",
-        nftContractAddress:"0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC",
-        currencyTokenAddress:"0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC",
-        currencyTokenAmount:100,
-        requireProjectId:true,
-        projectId:123,
-        expires:50000 
-    }
-
+    let dataValues = customConfig.entries
 
     let chainId = 1
     let contractAddress = '0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC'
